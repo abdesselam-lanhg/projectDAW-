@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم البرمجة - HTML, CSS, JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+            <h1>تعلم البرمجة</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active" data-tab="home">الرئيسية</a></li>
+                <li><a href="#" data-tab="html">HTML</a></li>
+                <li><a href="#" data-tab="css">CSS</a></li>
+                <li><a href="#" data-tab="javascript">JavaScript</a></li>
+                <li><a href="#" data-tab="playground">تجربة البرمجة</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <h2>مرحبًا بك في موقع تعلم البرمجة</h2>
+                <p>تعلم أساسيات تطوير الويب من خلال دروس تفاعلية وأمثلة عملية.</p>
+                <div class="languages">
+                    <div class="language-card" data-tab="html">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>لغة ترميز النصوص التشعبية لإنشاء هيكل الصفحة</p>
+                    </div>
+                    <div class="language-card" data-tab="css">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>لغة تنسيق لتصميم وتزيين صفحات الويب</p>
+                    </div>
+                    <div class="language-card" data-tab="javascript">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                        <p>لغة برمجة لإضافة التفاعل إلى صفحات الويب</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="html" class="tab-content">
+            <h2><i class="fab fa-html5"></i> تعلم HTML</h2>
+            <div class="lesson">
+                <h3>ما هي HTML؟</h3>
+                <p>HTML (لغة ترميز النص التشعبي) هي العمود الفقري لأي صفحة ويب. تستخدم لإنشاء هيكل المحتوى وتنظيمه.</p>
+                
+                <h3>العناصر الأساسية</h3>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+    &lt;p&gt;فقرة نصية&lt;/p&gt;
+    &lt;a href="https://example.com"&gt;رابط&lt;/a&gt;
+    &lt;img src="image.jpg" alt="وصف الصورة"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                
+                <h3>جرب بنفسك</h3>
+                <div class="try-example">
+                    <div class="code-editor">
+                        <textarea class="html-code" placeholder="أكتب كود HTML هنا...">&lt;h1&gt;مرحبًا بالعالم!&lt;/h1&gt;
+&lt;p&gt;هذه صفحتي الأولى.&lt;/p&gt;</textarea>
+                    </div>
+                    <div class="preview">
+                        <h4>الناتج:</h4>
+                        <iframe class="html-preview"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="css" class="tab-content">
+            <h2><i class="fab fa-css3-alt"></i> تعلم CSS</h2>
+            <div class="lesson">
+                <h3>ما هي CSS؟</h3>
+                <p>CSS (أوراق الأنماط المتتالية) هي لغة تستخدم لتنسيق وتهيئة مظهر عناصر HTML.</p>
+                
+                <h3>أساسيات CSS</h3>
+                <pre><code>/* تغيير لون النص لجميع العناوين */
+h1, h2, h3 {
+    color: #3498db;
+}
+
+/* تنسيق الفقرات */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الروابط */
+a {
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+/* تنسيق الصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}</code></pre>
+                
+                <h3>جرب بنفسك</h3>
+                <div class="try-example">
+                    <div class="code-editor">
+                        <textarea class="css-code" placeholder="أكتب كود CSS هنا...">h1 {
+    color: #2ecc71;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: #34495e;
+}</textarea>
+                    </div>
+                    <div class="preview">
+                        <h4>الناتج:</h4>
+                        <iframe class="css-preview"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="javascript" class="tab-content">
+            <h2><i class="fab fa-js-square"></i> تعلم JavaScript</h2>
+            <div class="lesson">
+                <h3>ما هي JavaScript؟</h3>
+                <p>JavaScript هي لغة برمجة تستخدم لجعل صفحات الويب تفاعلية وديناميكية.</p>
+                
+                <h3>أساسيات JavaScript</h3>
+                <pre><code>// تعريف متغير
+let message = "مرحبًا بالعالم!";
+
+// طباعة في وحدة التحكم
+console.log(message);
+
+// دالة بسيطة
+function greet(name) {
+    alert("مرحبًا " + name + "!");
+}
+
+// حدث عند النقر على زر
+document.getElementById("myButton").addEventListener("click", function() {
+    greet("زائر");
+});
+
+// مصفوفة
+let colors = ["أحمر", "أخضر", "أزرق"];
+
+// حلقة تكرار
+for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+}</code></pre>
+                
+                <h3>جرب بنفسك</h3>
+                <div class="try-example">
+                    <div class="code-editor">
+                        <textarea class="js-code" placeholder="أكتب كود JavaScript هنا...">// جرب كتابة بعض الأكواد هنا
+let name = prompt("ما هو اسمك؟");
+alert("مرحبًا " + name + "! شكرًا لزيارتك موقعنا.");
+
+function changeColor() {
+    document.body.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+}</textarea>
+                        <button onclick="runJS()">تشغيل الكود</button>
+                    </div>
+                    <div class="preview">
+                        <h4>الناتج:</h4>
+                        <div class="js-preview">
+                            <button onclick="changeColor()">تغيير لون الخلفية</button>
+                            <p id="js-output"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="playground" class="tab-content">
+            <h2><i class="fas fa-laptop-code"></i> تجربة البرمجة</h2>
+            <p>جرب كتابة وتجربة أكواد HTML وCSS وJavaScript معًا في المحرر أدناه:</p>
+            
+            <div class="playground-container">
+                <div class="code-tabs">
+                    <div class="code-tab active" data-lang="html">HTML</div>
+                    <div class="code-tab" data-lang="css">CSS</div>
+                    <div class="code-tab" data-lang="js">JavaScript</div>
+                </div>
+                
+                <div class="code-area">
+                    <textarea class="playground-code active" data-lang="html" placeholder="أكتب كود HTML هنا...">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;صفحتي&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;مرحبًا بالعالم!&lt;/h1&gt;
+    &lt;p id="demo"&gt;هذه صفحتي الأولى.&lt;/p&gt;
+    &lt;button onclick="changeText()"&gt;انقر هنا&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea>
+                    
+                    <textarea class="playground-code" data-lang="css" placeholder="أكتب كود CSS هنا...">body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #2ecc71;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}</textarea>
+                    
+                    <textarea class="playground-code" data-lang="js" placeholder="أكتب كود JavaScript هنا...">function changeText() {
+    document.getElementById("demo").innerHTML = "تم النقر على الزر!";
+    alert("شكرًا للنقر!");
+}
+
+// دالة أخرى
+function showTime() {
+    document.getElementById("demo").innerHTML = new Date();
+}</textarea>
+                </div>
+                
+                <button class="run-btn">تشغيل الكود <i class="fas fa-play"></i></button>
+                
+                <div class="playground-preview">
+                    <h4>الناتج:</h4>
+                    <iframe class="playground-output"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; developed by :Abdesselam Mezati & Amine chenna groupe:03 </p>
+        <P>projet de developpment d'application web 2024-2025</P>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
